@@ -202,12 +202,117 @@ body, html {
     display: flex;
 }
 
-.dashboard-inner-content h3{
-    margin-left: 30px;
-    margin-top: 10px;
+.dashboard-inner-content h3 {
+    padding: 20px;
 }
 
-.dashboard-inner-content p{
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+  
+body.dark-mode {
+    background-color: #333;
+    color: #333;
+}
+  
+.right-dashboard-container.light-mode {
+    background-color: beige;
+    color: #000;
+}
+  
+.right-dashboard-container.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+  
+.dashboard-inner-content {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.results-info {
+    margin: 20px; 
+}
+
+.results-info p {
+    margin-bottom: 10px; 
+}
+  
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
     margin-left: 10px;
-    margin-top: 10px;
+    gap: 2px;
+}
+
+.boxes-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; 
+}
+
+.box {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    border: 2px solid #999; 
+    border-radius: 20px;
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.box input, .box select {
+    width: 100%;
+    padding: 10px;
+    border: none; 
+    border-radius: 10px;
+    background-color: transparent;
+    color: #333; 
+    outline: none; 
+
+}
+
+.box input::placeholder, .box select {
+    color: #999; 
+}
+
+.search-input {
+    padding-right: 30px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    color: #333; 
+}
+
+.price-icon {
+    position: absolute;
+    right: 10px;
+    color: #999;
+}
+
+.filter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-text {
+    margin-right: 10px;
+    color: #333; 
+}
+
+.filter-icon {
+    color: #333; 
+}
+
+.select-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px; 
 }
