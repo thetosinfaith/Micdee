@@ -61,6 +61,25 @@ const Dashboard = () => {
           </button>
         </div>
       </div>
+      
+      <div className="right-dashboard-container">
+      <div className='features'>
+      <h2>Buy</h2>
+      <h2>Sell</h2>
+      <h2>Rent</h2>
+      <h2>Post</h2>
+      </div>
+
+      <div className='dashboard-content'>
+        <div className='dashboard-inner-content'>
+
+        </div>
+        
+
+      </div>
+
+      
+      </div>
     </div>
   );
 }

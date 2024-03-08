@@ -16,7 +16,7 @@ const Header = () => {
         
         <section className={`nav-links ${isOpen ? 'active' : ''}`}>
           <NavLink to='/' style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>Home</NavLink>
-          <NavLink to='/Categories' style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>About Us</NavLink>
+          <NavLink to='/about-us' style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>About Us</NavLink>
           <NavLink to='/post' style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>FAQs</NavLink>
           <NavLink to='/details' style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>Blog</NavLink>
           <NavLink to='/workspaces' style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>Contact Us</NavLink>

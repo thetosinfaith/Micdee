@@ -2,28 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Muli, ui-sans-serif, Satoshi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 body, html {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
 .dashboard-container {
-    background-color: white;
+    background-color: #F7F6F4;
     height: 100vh;
-    width: 100%;
+    width: 100vw; 
     display: flex;
+    overflow: hidden; 
 }
 
 .left-dashboard {
+    background-color: #F7F6F4;
     height: 100vh;
-    width: 20%;
-    border-right: 1px solid #ccc; 
+    width: 16%;
+    border-right: 1px solid #F7F6F4; 
     display: flex;
     flex-direction: column;    
     align-items: center; 
     padding: 20px;  
+    margin-right: 10px; 
+    gap: 10px;
 }
 
 .profile-section {
@@ -68,7 +73,7 @@ body, html {
     font-size: 18px;
     font-weight: bold;
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .profile-account-type {
@@ -147,7 +152,7 @@ body, html {
     font-size: 16px; 
     cursor: pointer; 
     transition: background-color 0.3s ease; 
-    margin-top: 50px; 
+    margin-top: 30px; 
     width: calc(100% - 20px); 
     margin-left: 10px; 
 }
@@ -161,17 +166,38 @@ body, html {
     background-color: #c0392b; 
 }
 
+.features {
+    display: flex;
+    text-align: center;
+    padding: 30px; 
+}
 
+.features h2 {
+    margin: 0 30px; 
+    font-size: 1.2rem; 
+}
 
+.right-dashboard-container {
+    height: 100vh; 
+    width: 100%; 
+    overflow-y: auto; 
+    gap: 10px;
+}
 
+.dashboard-content {
+    height: 100%;
+    width: 100%;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+}
 
+.dashboard-inner-content{
+    height: 100%;
+    padding: 10px;
+    width: 98%;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
 
-
-
-
-
-
-
-
-
-
+}

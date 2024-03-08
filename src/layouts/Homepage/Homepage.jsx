@@ -4,7 +4,7 @@ import Hero from '../../components/Hero/Hero';
 import Card from '../../components/Card/Card';
 import Footer from '../../components/Footer/Footer';
 import './Homepage.css'; 
-import Services from '../../components/Services/Services';
+import Services from '../../pages/AboutUs/AboutUs';
 
 const Layout = () => {
   return (

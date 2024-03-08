@@ -4,7 +4,7 @@ import { Ri24HoursLine} from "react-icons/ri";
 import { TbThumbUp } from "react-icons/tb";
 import { GrSecure } from "react-icons/gr";
 import { MdOutlineNotificationsActive } from "react-icons/md";
-import './Services.css';
+import './AboutUs.css';
 
 const Services = () => {
   return (
