@@ -1,8 +1,8 @@
 import React from 'react'
 import './Header.css'
-import Logo from '../../assets/range.png'
+import Logo from '../../assets/lg.png'
 import Hamburger from "hamburger-react";
-import { NavLink} from 'react-router-dom'
+import { NavLink, Link} from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -20,7 +20,9 @@ const Header = () => {
             </section>
             <section>
                <div className='reg-buttons'>
+               <Link to='/post'>
                <button className='signup'>Post Property</button>
+               </Link>
                </div>
 
                <div className='hamburger'>
@@ -29,8 +31,6 @@ const Header = () => {
             </section>
         </nav>
     </header>
-
-    
   )
 }
 
