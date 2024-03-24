@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import Logo from '../../assets/lg.png'
+import Logoo from '../../assets/logoo.png'
 import Hamburger from "hamburger-react";
 import { NavLink, Link} from 'react-router-dom'
 
@@ -9,7 +9,7 @@ const Header = () => {
     <header>
         <nav className='header-container'>
             <section className='logo'>
-                <img src={Logo} alt="" />
+                <img src={Logoo} alt="" />
             </section>
             <section className='nav-links'>
                 <NavLink to='/' style={({isActive}) => isActive ? {color: "#ED3237"} : {color: 'black'}}>About</NavLink>

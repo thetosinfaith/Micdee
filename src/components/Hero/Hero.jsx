@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <main className='container'>
       <div className='content'>
-        <h1 className='big-text'>Property and Homes<br /> in Nigeria for Rent</h1>
+        <h1 className='big-text'>Property and Homes<br /> in Nigeria for Sale</h1>
         <p className='small-text'>Designed to foster creativity, networking & business growth</p>
 
         <div className='booking-card'>

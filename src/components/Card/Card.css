@@ -1,10 +1,161 @@
-.card-container {
-    background-color: beige;
-    height: 100vh;
-    width: 100%;
-    border: 1px solid #e0e0e0;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  
+.property-section {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+  background: #EEEEF1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header .title {
+  font-weight: light;
+  color: #04060E;
+  margin-bottom: 50px;
+}
+
+.section-header .paragraph {
+  margin-top: -20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.property-filter-group {
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  margin: auto;
+  width: 75%;
+  align-items: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.property-filter-group ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.property-filter-group li {
+  cursor: pointer;
+}
+
+.property-filter-group li:hover {
+  text-decoration: underline;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.top-slider {
+  animation: slideRight 0s linear infinite;
+}
+
+.bottom-slider {
+  animation: slideLeft 0s linear infinite;
+}
+
+@keyframes slideRight {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes slideLeft {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.property-item {
+  min-width: 33.33%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.property-thum {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.property-thum img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.property-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.property-content {
+  padding: 15px;
+  background: white;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.property-title {
+  display: block;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.property-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.property-author a {
+  color: #333;
+  text-decoration: none;
+}
+
+.property-price {
+  font-weight: bold;
+  color: #ED3237;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.view-more-btn {
+  margin-top: 40px;
+  background: #ED3237;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-more-btn:hover {
+  background: #d31b2b;
+}

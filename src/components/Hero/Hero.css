@@ -20,14 +20,14 @@
 
 .small-text {
     margin-top: 19px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 
 .booking-card{
     background-color: white;
     color: #B6B9C7;
-    width: 70%;
+    width: 110%;
     margin: auto;
     display: flex;
     flex-direction: wrap;
