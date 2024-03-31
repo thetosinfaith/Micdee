@@ -3,8 +3,10 @@ import './Workspaces.css'
 
 const Workspaces = () => {
   return (
-    <div>Workspaces</div>
+    <div className='space-container'>
+      Workspaces
+      </div>
   )
 }
 
-export default Workspaces
+export default Workspaces;

@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  html, body{
+    height: 100%;
+    width: 100%;
     font-family: Muli, ui-sans-serif, Satoshi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   }
   
@@ -49,15 +54,28 @@
     gap: 20px;
     align-items: center;
   }
+
+  .reg-buttons .login{
+    background-color: transparent;
+    border: 1px solid white;
+  }
+
+  .login:hover{
+    background-color: white;
+    color: black;
+  }
+
+  .signup{
+    background-color: #ED3237;
+  }
   
   .reg-buttons button {
-    padding: 20px 30px;
-    background-color: #ED3237;
-    font-size: 16px;
-    color: white;
+    padding: 12.5px 25px;
+    font-size: 18px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
+    color: white;
   }
 
   

@@ -3,8 +3,17 @@ import './Booking.css'
 
 const Booking = () => {
   return (
-    <div>Booking</div>
+    <div className='booking-container'>
+      <div className='booking-inner'>
+      <form>
+        <input type="text" />
+
+      </form>
+    </div>
+    </div>
   )
 }
 
 export default Booking
+
+
