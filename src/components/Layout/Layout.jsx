@@ -16,12 +16,13 @@ const Layout = () => {
         <Hero />
       </div>
       <div>
+      <Services/>
       <Card/>
       <Lands/>
       </div>
 
       <Outlet/>
-      <Services/>
+      
       <Footer />
     </>
   );
