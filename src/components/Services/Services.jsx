@@ -11,7 +11,7 @@ const Services = () => {
     <div className='service-wrapper'>
       <div className='service-header'>
         <h1>At Our Core Is Trust</h1>
-        <p>Trust is our currency. We are committed to the security of your <br />land, properties and the protection of your account.</p>
+        <p>We are committed to the security of your <br />properties and the protection of your account</p>
       </div>
       <div className='clicks'>
         <p>LEARN MORE <FaAngleRight /></p>
