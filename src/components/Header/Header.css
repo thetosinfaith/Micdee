@@ -57,6 +57,7 @@ html, body {
 
 .reg-buttons .login {
   background-color: transparent;
+  border: 1px solid white; 
 }
 
 .login:hover {
@@ -97,6 +98,7 @@ html, body {
   z-index: 1000;
   transform: translateX(100%);
   transition: transform 0.3s ease; 
+  text-align: center;
 }
 
 .hamburger-menu.active {
@@ -120,11 +122,16 @@ html, body {
 .hamburger-menu .login {
   background-color: transparent;
   border: 1px solid white; 
+  text-align: center;
+  width: 100%;
 }
 
 .hamburger-menu .signup {
-  background-color: #ED3237;
+  margin-top: -20px;
+  background-color: black;
   color: white;
+  font-size: 15px;
+  width: 100%;
 }
 
 .close-menu {
@@ -158,7 +165,7 @@ html, body {
   }
 
   .hamburger-menu {
-    height: 70vh;
+    height: 80vh;
     width: 250px; 
     padding: 20px;
     transform: translateX(100%);

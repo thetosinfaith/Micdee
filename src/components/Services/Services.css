@@ -73,10 +73,11 @@ html, body {
 
 .service-item {
   background-color: white;
-  padding: 20px;
+  padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
+
 }
 
 .icon-circle {
@@ -142,7 +143,7 @@ html, body {
   }
 
   .service-header p {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .clicks p {
