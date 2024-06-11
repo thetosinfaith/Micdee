@@ -9,3 +9,22 @@ body, html {
     width: 100%;
 }
 
+.dashboard-container {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.left-dashboard {
+    height: 100vh;
+    width: 20%;
+    border-right: 1px solid #ccc; 
+    display: flex;
+    flex-direction: column;    
+    align-items: center; 
+    padding: 20px;  
+}
+
+
+
