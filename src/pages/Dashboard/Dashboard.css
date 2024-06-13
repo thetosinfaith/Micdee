@@ -33,5 +33,16 @@ body, html {
     margin-bottom: 30px;
 }
 
+.profile-pic-container {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 10px; 
+}
+
+
 
 
