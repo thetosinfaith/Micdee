@@ -2,7 +2,7 @@
   padding-top: 80px;
   padding-bottom: 50px;
   position: relative;
-  background: #F7F6F4;
+  background: #EEEEF1;
 }
 
 .container {
@@ -172,7 +172,7 @@
   }
 
   .property-filter-group {
-    background-color: #EEEEF1;
+    background-color: white;
     border-radius: 30px;
     text-align: center;
     margin: auto;
