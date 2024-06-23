@@ -10,7 +10,7 @@ const Hero = () => {
     <main className='container'>
       <div className='content'>
         <h1 className='big-text'>Properties and Homes<br /> in Nigeria for Sale</h1>
-        <p className='small-text'>Designed to foster creativity, networking & business growth</p>
+        <p className='small-text'>No 1 real estate development company in Sub- Sahara Africa</p>
 
         <div className='booking-card'>
           <section className='items'>
@@ -26,11 +26,6 @@ const Hero = () => {
           <section className='items'>
             <FontAwesomeIcon icon={faSackDollar} className="icon" />
             <input type="number" placeholder='Your Budget' />
-          </section>
-
-          <section className='items'>
-            <FontAwesomeIcon icon={faCalendarDays} className="icon" />
-            <input type="datetime-local" defaultValue="2024-07-12T23:20" />
           </section>
 
           <button className='click'><FontAwesomeIcon icon={faMagnifyingGlass} /></button>

@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { LuArrowRightToLine } from "react-icons/lu";
 import './Card.css';
 
-const sectionTitle = 'See Top Listings in Your Area';
-const sectionParagraph = 'We do our job on guaranteeing ownership of property before putting it on the market.';
-const buttonText = "View More";
+const sectionTitle = 'Featured Properties';
+const sectionParagraph = ' Now Selling';
+const buttonText = "Find Property For Rent";
+
 
 const propertyData = [
   {
@@ -26,7 +28,7 @@ const propertyData = [
     id: 2,
   },
   {
-    imgUrl: 'https://lh3.googleusercontent.com/p/AF1QipPwoxI_Avpoa8yVDUU2k1wyHDDY9i5T1rJF0TcG=s680-w680-h510',
+    imgUrl: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/443339138.jpg?k=785a0986d58fab868c286bef37eca9a9799410df6c80d324aabfac1ae0b7fdae&o=&hp=1',
     category: 'Flats and Apartments',
     title: 'Luxury Apartment in Victoria Island',
     sellerImage: 'assets/images/property/agent3.jpg',
@@ -80,8 +82,11 @@ const Card = () => {
     <div className='property-section style-3 padding-tb'>
       <div className='container'>
         <div className='section-header'>
+        <p className='paragraph'>
+        <LuArrowRightToLine style={{ marginRight: '8px', fontSize: '1em'}} />
+        {sectionParagraph}
+        </p>
           <h1 className='title'>{sectionTitle}</h1>
-          <p className='paragraph'>{sectionParagraph}</p>
 
           <div className='property-filter-group'>
             <ul className='lab-ul'>
