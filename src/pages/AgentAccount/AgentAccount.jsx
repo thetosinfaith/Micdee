@@ -8,7 +8,7 @@ import './AgentAccount.css';
 const AgentAccount = () => {
   return (
     <div className='agent-container'>
-        <h3> Estate Agents</h3>
+        <h3> Agents & Developers</h3>
         <p>For agents facilitating property transactions.</p>
         <ul>
             <li><IoCheckmark /> Manage properties.</li>
