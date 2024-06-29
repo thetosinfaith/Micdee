@@ -10,6 +10,7 @@
     height: 100%;
     overflow-x: hidden;
   }
+  
   .bg-wrapper {
     background: linear-gradient(
         rgba(0, 0, 0, 0.65),

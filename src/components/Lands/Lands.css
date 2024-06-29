@@ -1,0 +1,256 @@
+.land-section {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    position: relative;
+    background: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-header .title {
+    font-weight: light;
+    font-size: 2.3em;
+    color: #04060E;
+    margin-bottom: 50px;
+  }
+  
+  .section-header .paragraph {
+    margin-top: -20px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #ED3237;
+  }
+  
+  .land-filter-group {
+    background-color: #EEEEF1;
+    border-radius: 30px;
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    align-items: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .land-filter-group ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  
+  .land-filter-group li {
+    cursor: pointer;
+  }
+  
+  .land-filter-group li:hover {
+    text-decoration: underline;
+  }
+  
+  .slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .top-slider {
+    animation: slideRight 0s linear infinite;
+  }
+  
+  .bottom-slider {
+    animation: slideLeft 0s linear infinite;
+  }
+  
+  @keyframes slideRight {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  @keyframes slideLeft {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  .land-item {
+    min-width: 33.33%;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+  
+  .land-thum {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .land-thum img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .land-category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .land-content {
+    padding: 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-top: none;
+  }
+  
+  .land-title {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .land-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .land-author a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .land-price {
+    font-weight: bold;
+    color: #ED3237;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .view-more-btn {
+    margin-top: 30px;
+    background: #ED3237;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .view-more-btn:hover {
+    background: #d31b2b;
+  }
+  
+  @media (max-width: 1280px) {
+    .land-item {
+      min-width: 50%;
+    }
+  
+    .land-filter-group {
+      background-color: #EEEEF1;
+      border-radius: 30px;
+      text-align: center;
+      margin: auto;
+      width: 75%;
+      align-items: center;
+      height: auto; 
+      display: flex;
+      flex-direction: column; 
+      padding: 10px; 
+    }
+    
+    .land-filter-group ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column; 
+      gap: 15px; 
+      margin: 0; 
+    }
+    
+    .land-filter-group li {
+      cursor: pointer;
+      font-size: 1em; 
+    }
+    
+    .land-filter-group li:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+      .land-filter-group {
+        width: 100%;
+        padding: 10px; 
+      }
+    
+      .land-filter-group ul {
+        flex-direction: column; 
+        gap: 15px; 
+      }
+    
+      .land-filter-group li {
+        font-size: 1em; 
+      }
+    }
+    
+  }
+  
+  @media (max-width: 768px) {
+    .land-section {
+      padding-top: 40px;
+      padding-bottom: 25px;
+    }
+  
+    .land-item {
+      min-width: 100%;
+    }
+  
+    .section-header .title {
+      font-size: 1.8em;
+    }
+  
+    .section-header .paragraph {
+      font-size: 1em;
+    }
+  
+    .land-filter-group {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .land-filter-group ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .view-more-btn {
+      font-size: 15px;
+      padding: 8px 16px;
+    }
+  }
+  
