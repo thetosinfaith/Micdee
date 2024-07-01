@@ -68,7 +68,7 @@ html, body {
     }
 
     .footer-image {
-        width: 50%;
+        width: 30%;
         height: auto; 
         display: block;
         float: left; 
@@ -108,4 +108,3 @@ html, body {
     display: block;
     float: left;
 }
-

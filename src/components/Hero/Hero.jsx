@@ -28,7 +28,7 @@ const Hero = () => {
             <input type="number" placeholder='Your Budget' />
           </section>
 
-          <button className='click'><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+          <button className='click'> Search  <FontAwesomeIcon icon={faMagnifyingGlass} /></button>
         </div>
       </div>
     </main>
