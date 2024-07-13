@@ -28,7 +28,7 @@
   .nav-links {
     display: flex;
     gap: 60px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     background-color: white;
     padding: 20px 30px;
@@ -41,7 +41,7 @@
   }
   
   .active-link {
-    color: #FF741A;
+    color: #ED3237;
   }
   
   .reg-buttons {
@@ -52,8 +52,8 @@
   
   .reg-buttons button {
     padding: 20px 30px;
-    background-color: #FF741A;
-    font-size: 16px;
+    background-color: #ED3237;
+    font-size: 18px;
     color: white;
     border: none;
     border-radius: 30px;
