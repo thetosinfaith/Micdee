@@ -1,107 +1,274 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  html, body{
-    height: 100%;
-    width: 100%;
-    font-family: Muli, ui-sans-serif, Satoshi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  }
-  
-  .header-container {
-    height: 15vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 100px;
-  }
-  
-  .logo {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-  
-  .logo img {
-    height: 55px;
-    width: auto;
-  }
-  
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Muli, ui-sans-serif, Satoshi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+.header-container {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo img {
+  height: 55px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.active-link {
+  color: #ED3237;
+}
+
+.reg-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.reg-buttons .login {
+  background-color: transparent;
+}
+
+.login:hover {
+  background-color: white;
+  color: black;
+}
+
+.signup {
+  background-color: #ED3237;
+}
+
+.reg-buttons button {
+  padding: 12.5px 25px;
+  font-size: 16px; 
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 0; 
+  right: 0; 
+  height: 80vh; 
+  width: 250px; 
+  background-color: #ED3237;
+  border-radius: 0 0 0 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease; 
+}
+
+.hamburger-menu.active {
+  transform: translateX(0); 
+}
+
+.hamburger-menu a,
+.hamburger-menu button {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.hamburger-menu .login {
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.hamburger-menu .signup {
+  background-color: #ED3237;
+  color: white;
+}
+
+.close-menu {
+  display: block;
+  font-size: 24px;
+  text-align: right;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
   .nav-links {
-    display: flex;
-    gap: 60px;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: white;
-    padding: 20px 30px;
-    border-radius: 30px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .active-link {
-    color: #ED3237;
-  }
-  
-  .reg-buttons {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .reg-buttons .login{
-    background-color: transparent;
-    border: 1px solid white;
-  }
-
-  .login:hover{
-    background-color: white;
-    color: black;
-  }
-
-  .signup{
-    background-color: #ED3237;
-  }
-  
-  .reg-buttons button {
-    padding: 12.5px 25px;
-    font-size: 18px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    color: white;
-  }
-
-  
-  .hamburger {
     display: none;
   }
-  
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-    }
-  
-    .hamburger {
-      display: block;
-    }
-  
-    .header-container {
-      justify-content: space-between;
-    }
-  
-    .logo img {
-      height: 30px;
-    }
-  
-    .reg-buttons button {
-      display: none;
-    }
+
+  .hamburger {
+    display: block;
   }
-  
+
+  .hamburger-menu {
+    display: block; 
+  }
+
+.header-container {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0 20px; 
+}
+
+.logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo img {
+  height: 55px;
+  width: auto;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 10px;
+  cursor: pointer;
+  color: white;
+  border-radius: 40px;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 70vh;
+  width: 250px; 
+  background-color: #ED3237;
+  border-radius: 0 0 0 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+  transform: translateX(105%);
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.hamburger-menu.active {
+  transform: translateX(0);
+}
+
+
+.close-menu {
+  display: block;
+  font-size: 24px;
+  text-align: right;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header-container {
+    padding: 0 10px; 
+  }
+
+  .logo {
+    margin-right: 10px; 
+  }
+
+  .hamburger-menu {
+    display: block;
+    padding: 20px;
+    right: 10px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .logo {
+    margin-right: 15px; 
+  }
+
+  .hamburger-menu {
+    padding: 25px;
+    right: 5px;
+  }
+}
+
+  .logo img {
+    height: 30px;
+  }
+
+  .reg-buttons button {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 25px;
+  }
+
+  .reg-buttons button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .logo {
+    margin-right: 15px;
+  }
+
+  .hamburger-menu {
+    padding: 5px;
+    right: 5px;
+  }
+}
