@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import { LuArrowRightToLine } from "react-icons/lu";
 import './Card.css';
 
-const sectionTitle = 'HOT SELLING PROPERTIES';
-const sectionParagraph = ' Now Selling';
+const sectionTitle = 'Featured Properties';
 const buttonText = "Find Property For Rent";
 
 
@@ -82,10 +81,6 @@ const Card = () => {
     <div className='property-section style-3 padding-tb'>
       <div className='container'>
         <div className='section-header'>
-        <p className='paragraph'>
-        <LuArrowRightToLine style={{ marginRight: '8px', fontSize: '1em'}} />
-        {sectionParagraph}
-        </p>
           <h1 className='title'>{sectionTitle}</h1>
 
           <div className='property-filter-group'>
