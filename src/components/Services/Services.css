@@ -1,92 +1,200 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Muli, ui-sans-serif, Satoshi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Muli, ui-sans-serif, Satoshi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.component-wrapper {
+  background-image: url('../../assets/0.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  padding: 20px;
+}
+
+.service-header {
+  margin-bottom: 20px;
+}
+
+.service-header h1 {
+  font-size: 2.3em;
+  margin-bottom: 1em;
+  color: black;
+}
+
+.service-header p {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  color: black;
+  text-align: center;
+}
+
+.clicks p {
+  font-size: 1em;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.clicks p svg {
+  margin-left: 5px;
+}
+
+.our-services {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.service-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: red;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.service-item h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.service-item p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+@media (max-width: 1280px) {
+  .our-services {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  html, body {
-    width: 100%;
-    height: 100%;
-  }
-  
+}
+
+@media (max-width: 992px) {
   .service-wrapper {
-    background-image: url('../../assets/0.jpg');
-    height: 110vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .service-header {
-    margin-bottom: 20px; 
+    padding: 15px;
+    min-height: 70vh; 
   }
   
   .service-header h1 {
-    font-size: 2.3em;
-    margin-bottom: 1em; 
-    color: black;
+    font-size: 2em;
   }
   
   .service-header p {
-    font-size: 1.3em;
-    margin-bottom: 1em;
-    color: black;
-  }
-  
-  .clicks p {
-    font-size: 1em;
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    margin-bottom: 30px;
-    color: black;
-  }
-  
-  .clicks p svg {
-    margin-left: 5px; 
+    font-size: 1.2em;
   }
   
   .our-services {
-    max-width: 1200px;
-    height: 60vh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
   
   .service-item {
-    background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
   }
-  
-  .icon-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: red;
-    margin-bottom: 20px;
-    font-size: 35px;
+}
+
+@media (max-width: 768px) {
+  .service-wrapper {
+    padding: 10px;
+    min-height: 60vh; 
   }
-  
-  .service-item h1 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+
+  .service-header h1 {
+    font-size: 1.8em;
   }
-  
-  .service-item p {
+
+  .service-header p {
     font-size: 1em;
-    line-height: 1.5;
+  }
+
+  .clicks p {
+    font-size: 0.9em;
+  }
+
+  .our-services {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
   
+  .service-item {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-wrapper {
+    padding: 5px;
+    min-height: 50vh;
+    margin-top: 50px;
+  }
+
+  .service-header h1 {
+    font-size: 1.5em;
+  }
+
+  .service-header p {
+    font-size: 0.8em;
+  }
+
+  .clicks p {
+    font-size: 0.7em;
+  }
+
+  .service-item {
+    padding: 10px;
+  }
+
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .service-item h1 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+
+  .service-item p {
+    font-size: 0.9em;
+  }
+}
