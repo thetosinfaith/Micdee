@@ -18,7 +18,7 @@
   }
   
   .mini-header .image {
-    height: 50px; 
+    height: 45px; 
     width: auto; 
   }
   
@@ -49,7 +49,7 @@
   }  
   
   .account-layout {
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: flex-start; 
     justify-content: space-around;

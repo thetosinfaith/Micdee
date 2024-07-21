@@ -8,8 +8,8 @@ import './LandlordAccount.css';
 const LandlordAccount = () => {
   return (
     <div className='landlord-container'>
-        <h3>Landlords</h3>
-        <p>For landlords managing rental properties.</p>
+        <h3>For Landlords</h3>
+        <p>For landlords managing land & rental properties.</p>
         <ul>
             <li><IoCheckmark /> Put your properties up for rent</li>
             <li><IoCheckmark /> Hire agents for your properties.</li>

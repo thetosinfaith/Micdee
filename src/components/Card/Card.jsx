@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { LuArrowRightToLine } from "react-icons/lu";
 import './Card.css';
 
-const sectionTitle = 'Featured Properties';
+const sectionTitle = 'HOT SELLING PROPERTIES';
 const sectionParagraph = ' Now Selling';
 const buttonText = "Find Property For Rent";
 

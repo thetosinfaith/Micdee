@@ -22,7 +22,6 @@ const AccountTypeLayout = () => {
         <IndividualAccount />
         <LandlordAccount />
         <AgentAccount />
-        <DeveloperAccount />
       </div>
       <Outlet />
     </div>
