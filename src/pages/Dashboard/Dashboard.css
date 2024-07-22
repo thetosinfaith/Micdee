@@ -94,6 +94,16 @@ body, html {
     transition: box-shadow 0.3s ease; 
 }
 
+.dashboard-form input[type="text"]::placeholder {
+    color: #999; 
+}
+
+.dashboard-form input[type="text"]:focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    border-color: #690896; 
+}
+
+
 
 
 
