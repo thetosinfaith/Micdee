@@ -131,6 +131,28 @@ body, html {
     color: red; 
 }
 
+.left-dashboard ul li a svg {
+    margin-right: 10px; 
+    color: #999; 
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    background-color: #ED3237; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    margin-top: 50px; 
+    width: calc(100% - 20px); 
+    margin-left: 10px; 
+}
+
+
 
 
 
