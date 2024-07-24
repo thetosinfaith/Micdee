@@ -152,6 +152,14 @@ body, html {
     margin-left: 10px; 
 }
 
+.logout-icon {
+    margin-right: 10px; 
+    font-size: 20px; 
+}
+
+.logout-button:hover {
+    background-color: #c0392b; 
+}
 
 
 
