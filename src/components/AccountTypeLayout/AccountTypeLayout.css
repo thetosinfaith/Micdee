@@ -65,9 +65,6 @@ html, body {
   margin: 10px;
 }
 
-/* Media Queries for Responsiveness */
-
-/* For tablets and small screens */
 @media (max-width: 768px) {
   .mini-header {
     padding: 10px 5px;
@@ -77,34 +74,34 @@ html, body {
 
   @media (max-width: 768px) {
     .account-info {
-      display: none; /* Hide text on mobile and tablet screens */
+      display: none; 
     }
   
     .mobile-menu-btn {
-      display: block; /* Show hamburger menu icon */
+      display: block; 
       cursor: pointer;
-      font-size: 24px; /* Adjust size as needed */
+      font-size: 24px; 
     }
   
     .mobile-menu {
-      display: none; /* Hide mobile menu by default */
-      background-color: #fff; /* Background color */
-      position: absolute; /* Position menu absolutely */
-      top: 100%; /* Position it below the header */
+      display: none;
+      background-color: #fff;
+      position: absolute;
+      top: 100%; 
       left: 0;
-      width: 100%; /* Full width */
-      border-top: 1px solid #ddd; /* Optional: add border */
+      width: 100%; 
+      border-top: 1px solid #ddd; 
     }
   
     .mobile-menu a {
-      display: block; /* Stack menu items vertically */
-      padding: 10px; /* Spacing */
-      text-decoration: none; /* Remove underline */
-      color: #333; /* Text color */
+      display: block; 
+      padding: 10px; 
+      text-decoration: none; 
+      color: #333; 
     }
   
     .mobile-menu.active {
-      display: block; /* Show menu when active */
+      display: block; 
     }
   }
 
@@ -119,7 +116,6 @@ html, body {
   }
 }
 
-/* For mobile screens */
 @media (max-width: 480px) {
   @media (max-width: 480px) {
     .header-container {

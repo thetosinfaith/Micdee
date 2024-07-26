@@ -18,7 +18,7 @@ const propertyData = [
     id: 1,
   },
   {
-    imgUrl: 'https://images.squarespace-cdn.com/content/v1/63e37c4c18b70721172c8527/4eeaa6a3-ba04-4320-8582-fee4a959b885/MICDEE+DESIGN_MTN+PLAZA_4TH+FLOOR_21.jpg?format=1500w',
+    imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSioDeCRMcMIbgV-3Ty6jSYb1kxA9j5RGSKzo6VXTECSriLpwGFai5azibktBG8xu8GIzY&usqp=CAU',
     category: 'Office Spaces',
     title: 'Spacious Office Space in Ikeja',
     sellerImage: 'assets/images/property/agent2.jpg',
@@ -44,9 +44,8 @@ const propertyData = [
     price: '₦ 800,000',
     id: 4,
   },
-  
   {
-    imgUrl: 'https://meritabode.com/wp-content/uploads/2021/03/3-bedrom-1000-x-800.jpg',
+    imgUrl: 'https://i0.wp.com/mercy-homes.com/wp-content/uploads/2023/10/rccg-pic-.jpeg?resize=960%2C540&ssl=1',
     category: 'Semi Detached Bungalow',
     title: 'Bungalow in Surulere',
     sellerImage: 'assets/images/property/agent5.jpg',

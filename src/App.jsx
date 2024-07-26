@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AuthLayout from "./components/AuthLayout/AuthLayout";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home/Home";
 import Workspaces from "./pages/Workspaces/Workspaces";
@@ -7,23 +6,25 @@ import Categories from "./pages/Categories/Categories";
 import Details from "./pages/Details/Details";
 import Booking from "./pages/Booking/Booking";
 import Post from "./pages/Post/Post";
-import Login from "./pages/Login/Login";
-import Signup from "./pages/Signup/Signup";
+import Authentication from "./RegisterAuth/Authentication/Authentication";
+import Login from "./RegisterAuth/Login/Login";
+import Signup from "./RegisterAuth/Signup/Signup";
 import AccountTypeLayout from "./components/AccountTypeLayout/AccountTypeLayout";
 import AgentAccount from "./pages/AgentAccount/AgentAccount";
 import DeveloperAccount from "./pages/DeveloperAccount/DeveloperAccount";
 import LandlordAccount from "./pages/LandlordAccount/LandlordAccount";
 import IndividualAccount from "./pages/IndividualAccount/IndividualAccount";
-import DashboardLayout from "./components/DashboardLayout/DashboardLayout";  
-import Dashboard from "./pages/Dashboard/Dashboard";                        
-import Profile from "./pages/Profile/Profile";                              
-import Contacts from "./pages/Contacts/Contacts";                          
-import Properties from "./pages/Properties/Properties";               
-import Calendar from "./pages/Calendar/Calendar";                       
-import Inbox from "./pages/Inbox/Inbox";                                   
-import Notifications from "./pages/Notifications/Notifications";          
-import Settings from "./pages/Settings/Settings";                          
-import Logout from "./pages/Logout/Logout";                               
+import DashboardLayout from "./components/DashboardLayout/DashboardLayout";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Profile from "./pages/Profile/Profile";
+import Contacts from "./pages/Contacts/Contacts";
+import Properties from "./pages/Properties/Properties";
+import Calendar from "./pages/Calendar/Calendar";
+import Inbox from "./pages/Inbox/Inbox";
+import Notifications from "./pages/Notifications/Notifications";
+import Settings from "./pages/Settings/Settings";
+import Logout from "./pages/Logout/Logout";
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -79,7 +80,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/auth',
-    element: <AuthLayout />,
+    element: <Authentication />,
     children: [
       {
         path: 'signup',

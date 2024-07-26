@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot, faHouse, faSackDollar, faCalendarDays, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faHouse, faSackDollar, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import Locations from '../Locations/Locations';
 import PropertyType from '../PropertyType/PropertyType';
 import './Hero.css';
@@ -28,7 +28,7 @@ const Hero = () => {
             <input type="number" placeholder='Your Budget' />
           </section>
 
-          <button className='click'> Search <FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+          <button className='click'><FontAwesomeIcon icon={faMagnifyingGlass} /> Search</button>
         </div>
       </div>
     </main>

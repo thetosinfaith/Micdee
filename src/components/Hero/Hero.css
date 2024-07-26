@@ -1,8 +1,10 @@
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Muli, ui-sans-serif, Satoshi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  
 }
 
 body, html {
@@ -46,11 +48,13 @@ body, html {
 
 .items .icon {
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   text-decoration: none;
   color: #B6B9C7;
   font-size: 1.5rem;
   flex: 1 1 140px; 
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
 }
 
 .items select,
@@ -60,10 +64,14 @@ body, html {
   border: 1px solid white;
   border-radius: 5px;
   text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
 }
 
 .items span {
   font-size: 1.5rem;
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
 }
 
 .click {
