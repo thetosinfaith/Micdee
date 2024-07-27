@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import './Login.css'; 
 import Staffs from '../../assets/Bolatito.jpg'; 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -41,7 +41,7 @@ const Login = () => {
               </span>
             </div>
           
-            <button type="submit" className="submit-login">Log In</button>
+            <button type="submit" className="submit-login"><NavLink to='/dashboard'>Log In</NavLink></button>
           </form>
           <div className="sign-up">
             <p>Don't have an account? <span className='login-span'><Link to="/auth/signup">Sign Up</Link></span></p>

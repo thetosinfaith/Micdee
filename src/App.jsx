@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./components/Layout/Layout";
+import Homepage from "./layouts/Homepage/Homepage";
 import Home from "./pages/Home/Home";
 import Workspaces from "./pages/Workspaces/Workspaces";
 import Categories from "./pages/Categories/Categories";
@@ -9,12 +9,12 @@ import Post from "./pages/Post/Post";
 import Authentication from "./RegisterAuth/Authentication/Authentication";
 import Login from "./RegisterAuth/Login/Login";
 import Signup from "./RegisterAuth/Signup/Signup";
-import AccountTypeLayout from "./components/AccountTypeLayout/AccountTypeLayout";
+import AccountTypeLayout from "./layouts/Account/Account";
 import AgentAccount from "./pages/AgentAccount/AgentAccount";
 import DeveloperAccount from "./pages/DeveloperAccount/DeveloperAccount";
 import LandlordAccount from "./pages/LandlordAccount/LandlordAccount";
 import IndividualAccount from "./pages/IndividualAccount/IndividualAccount";
-import DashboardLayout from "./components/DashboardLayout/DashboardLayout";
+import DashboardLayout from "./layouts/Dashboard/Dashboard";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Profile from "./pages/Profile/Profile";
 import Contacts from "./pages/Contacts/Contacts";
@@ -28,7 +28,7 @@ import Logout from "./pages/Logout/Logout";
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout />,
+    element: <Homepage />,
     children: [
       {
         path: '/',

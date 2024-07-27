@@ -67,6 +67,7 @@ h2 {
 .input-password,
 .input-confirm-password {
     padding-right: 40px; 
+    cursor: pointer;
 }
 
 .password-toggle {
@@ -89,18 +90,23 @@ h2 {
 
 .submit-up:hover {
     background-color: #ED3237;
+    cursor: pointer;
 }
 
 .sign-in {
     margin-top: 20px;
     text-align: center;
+    cursor: pointer;
 }
 
 .signup-span a {
     color: #ED3237;
     text-decoration: none;
+    cursor: pointer;
+
 }
 
 .signup-span a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }

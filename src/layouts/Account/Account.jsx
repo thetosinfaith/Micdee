@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet} from 'react-router-dom'
-import './AccountTypeLayout.css'
+import './Account.css'
 import Hamburger from 'hamburger-react';
 import AgentAccount from '../../pages/AgentAccount/AgentAccount';
 import IndividualAccount from '../../pages/IndividualAccount/IndividualAccount';
@@ -8,7 +8,7 @@ import LandlordAccount from '../../pages/LandlordAccount/LandlordAccount';
 import AccountLogo from '../../assets/redLogo.png'
 import { Link } from 'react-router-dom';
 
-const AccountTypeLayout = () => {
+const Account = () => {
   return (
     <div className='account-contents'>
       <div className='mini-header'>
@@ -31,4 +31,4 @@ const AccountTypeLayout = () => {
   )
 }
 
-export default AccountTypeLayout;
+export default Account;
