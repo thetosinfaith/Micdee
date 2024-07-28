@@ -199,5 +199,15 @@ body, html {
     background-color: white;
     margin-top: 10px;
     border-radius: 10px;
+    display: flex;
+}
 
+.dashboard-inner-content h3{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.dashboard-inner-content p{
+    margin-left: 10px;
+    margin-top: 10px;
 }

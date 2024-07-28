@@ -72,6 +72,7 @@ const Dashboard = () => {
 
       <div className='dashboard-content'>
         <div className='dashboard-inner-content'>
+          <h3>249 Results</h3> <p>in Lagos, Nigeria</p>
 
         </div>
         
