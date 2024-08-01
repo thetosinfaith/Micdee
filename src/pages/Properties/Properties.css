@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100vh;
+  width: 100%;
+}
+
+.properties-container {
+  margin-top: 10px;
+  height: 500vh; 
+  width: 70%; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.property-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  width: 250px; 
+  height: 48vh; /* Keeping height as per your request */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.property-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.property-item h4 {
+  margin: 10px 0 10px 0; /* Adjusted to avoid double margin property */
+  color: #333;
+}
+
+.property-item p {
+  margin: 5px 0;
+  color: #777;
+}
+
+.property-item p:last-of-type {
+  font-weight: bold;
+  color: red;
+  margin-top: 10px;
+}
+
+.property-location {
+  display: flex;
+  align-items: center; /
+}
+
+.property-location svg {
+  margin-right: 8px; 
+}
+

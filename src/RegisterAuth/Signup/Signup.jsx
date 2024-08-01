@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import './Signup.css';
+import { z } from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import axios from "axios";
+import Swal from 'sweetalert2'
+import { Link, useNavigate } from "react-router-dom";
 import Staffs from '../../assets/Kawthar.jpg';
-import { Link, NavLink} from "react-router-dom";
 
 const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -67,7 +72,7 @@ const Signup = () => {
               </span>
             </div>
           
-            <button type="submit" className="submit-up"><Link to="/auth/login">Sign Up</Link></button>
+            <button type="submit" className="submit-up"><Link to="/auth/login" style={{}}>Sign Up</Link></button>
           </form>
           <div className="sign-in">
             <p>Already have an account? <span className='signup-span'><Link to="/auth/login">Log In</Link></span></p>

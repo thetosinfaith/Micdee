@@ -40,7 +40,7 @@ const propertyData = [
     category: 'Shops',
     title: 'Shop in a Mall, Onisha',
     sellerImage: 'assets/images/property/agent4.jpg',
-    sellerName: 'Vines Realty',
+    sellerName: 'Sterling Homes',
     price: '₦ 800,000',
     id: 4,
   },

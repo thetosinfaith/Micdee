@@ -97,6 +97,7 @@ h2 {
     margin-top: 20px;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .signup-span a {

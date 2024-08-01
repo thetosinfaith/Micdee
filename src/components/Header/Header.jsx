@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
-import Logoo from '../../assets/logoo.png';
+import Logoo from '../../assets/thelogo.png';
 import { NavLink } from 'react-router-dom';
 import Hamburger from 'hamburger-react';
 
@@ -17,7 +17,7 @@ const Header = () => {
         <section className={`nav-links ${isOpen ? 'active' : ''}`}>
           <NavLink to='/' style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>Home</NavLink>
           <NavLink to='/about-us' style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>About Us</NavLink>
-          <NavLink to='/post' style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>FAQs</NavLink>
+          <NavLink to='/faq' style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>FAQs</NavLink>
           <NavLink to='/details' style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>Blog</NavLink>
           <NavLink to='/workspaces' style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>Contact Us</NavLink>
         </section>

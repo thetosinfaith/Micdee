@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaAngleRight } from "react-icons/fa6";
-import { Ri24HoursLine} from "react-icons/ri";
+import { FaAngleRight } from "react-icons/fa";
+import { Ri24HoursLine } from "react-icons/ri";
 import { TbThumbUp } from "react-icons/tb";
 import { GrSecure } from "react-icons/gr";
 import { MdOutlineNotificationsActive } from "react-icons/md";
@@ -11,16 +11,16 @@ const Services = () => {
     <div className='service-wrapper'>
       <div className='service-header'>
         <h1>At Our Core Is Trust</h1>
-        <p>We are committed to the security of your <br />properties and the protection of your account</p>
+        <h4 style={{ fontWeight: 'normal', marginTop: '20px', marginButton: '20px' }}>Trust us to find you your dream property, <br />at the best price, just in time.</h4>
       </div>
-      <div className='clicks'>
-        <p>LEARN MORE <FaAngleRight /></p>
-      </div>
+      <button className='clicks' style={{ backgroundColor: 'red', height: '5vh', border: 'none', color: 'white', cursor: 'pointer', width: '10%', borderRadius: '5px', marginBottom: '20px', marginTop: '10px'}}>
+      LEARN MORE <FaAngleRight />
+      </button>
       <div className='our-services'>
         <div className='service-item'>
           <div className='icon-circle'><Ri24HoursLine /></div>
           <h1>24hrs Support</h1>
-          <p>At Micdee, we maintain high standards in all our dealings, regardless of the people, client, project size, scope or budget. </p>
+          <p>At Micdee, we maintain high standards in all our dealings, regardless of the people, client, project size, scope or budget.</p>
         </div>
         <div className='service-item'>
           <div className='icon-circle'><TbThumbUp /></div>
@@ -30,7 +30,7 @@ const Services = () => {
         <div className='service-item'>
           <div className='icon-circle'><GrSecure /></div>
           <h1>Secure Housing</h1>
-          <p>We are making access to a house better and easier for everyone. We are focused on the need to increase access to home ownership </p>
+          <p>We are making access to a house better and easier for everyone. We are focused on the need to increase access to home ownership.</p>
         </div>
         <div className='service-item'>
           <div className='icon-circle'><MdOutlineNotificationsActive /></div>

@@ -23,6 +23,7 @@ import Inbox from "./pages/Inbox/Inbox";
 import Notifications from "./pages/Notifications/Notifications";
 import Settings from "./pages/Settings/Settings";
 import Logout from "./pages/Logout/Logout";
+import NotFound from "./pages/PageNotFound/NotFound"; 
 
 const router = createBrowserRouter([
   {
@@ -30,24 +31,20 @@ const router = createBrowserRouter([
     element: <Homepage />,
     children: [
       {
-        path: '/',
+        path: '',
         element: <Home />,
       },
       {
-        path: '/about-us',
+        path: 'about-us',
         element: <AboutUs />,
       },
       {
-        path: '/details',
+        path: 'details',
         element: <Details />,
       },
       {
-        path: '/booking',
+        path: 'booking',
         element: <Booking />,
-      },
-      {
-        path: '/post',
-        element: <Post />,
       },
     ],
   },
@@ -96,6 +93,10 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
+        path: 'post',
+        element: <Post />, 
+      },
+      {
         path: 'profile',
         element: <Profile />,
       },
@@ -128,6 +129,10 @@ const router = createBrowserRouter([
         element: <Logout />,
       },
     ],
+  },
+  {
+    path: '*', 
+    element: <NotFound />, 
   },
 ]);
 

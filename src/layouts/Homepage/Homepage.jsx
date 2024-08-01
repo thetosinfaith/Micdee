@@ -4,7 +4,7 @@ import Hero from '../../components/Hero/Hero';
 import Card from '../../components/Card/Card';
 import Footer from '../../components/Footer/Footer';
 import './Homepage.css'; 
-import Services from '../../pages/AboutUs/AboutUs';
+import AboutUs from '../../pages/AboutUs/AboutUs';
 
 const Layout = () => {
   return (
@@ -14,7 +14,7 @@ const Layout = () => {
         <Hero />
       </div>
       <div>
-        <Services/>
+        <AboutUs/>
         <Card/>
       </div>
         <Footer />

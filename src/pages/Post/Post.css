@@ -1,0 +1,133 @@
+.post-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .post-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .post-left-section, .post-right-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .post-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .post-user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .post-avatar {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .post-username {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .post-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .post-textarea, .post-input {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .post-char-remaining {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .post-tag {
+    background-color: #eee;
+    padding: 7px 12px; /* Increased padding */
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .post-image-upload {
+    margin-bottom: 20px;
+  }
+  
+  .post-add-image {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+  }
+  
+  .post-post-button {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post-preview {
+    background-color: #f9f9f9;
+    padding: 24px; /* Increased padding */
+    border-radius: 5px;
+  }
+  
+  .post-username-preview {
+    font-weight: bold;
+  }
+  
+  .post-caption-preview {
+    margin: 14px 0; /* Increased margin */
+  }
+  
+  .post-preview-images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .post-preview-image {
+    width: 120px; 
+    height: 120px; 
+    object-fit: cover;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .post-footer-note {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .post-report-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  

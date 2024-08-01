@@ -96,14 +96,38 @@ html, body {
   margin-bottom: 20px;
 }
 
-.service-item p {
-  font-size: 1em;
-  line-height: 1.5;
+.clicks {
+  background-color: red;
+  height: auto; 
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  padding: 10px 20px; 
+  font-size: 1em; 
+  text-align: center; 
+  line-height: 1.2; 
+  white-space: nowrap; 
+  min-width: 120px; 
 }
 
 @media (min-width: 992px) {
+  .clicks {
+    width: 10%; 
+  }
+
   .service-header h1 {
     margin-top: 40px; 
+    margin-bottom: 10px;
+
+  }
+
+  .service-header p {
+    margin-top: 20px;
   }
 }
 
@@ -121,6 +145,8 @@ html, body {
   
   .service-header h1 {
     font-size: 2em;
+    margin-top: 20px; 
+
   }
   
   .service-header p {
@@ -135,6 +161,11 @@ html, body {
   .service-item {
     padding: 20px;
   }
+
+  .clicks {
+    width: 20%; 
+    font-size: 0.9em; 
+  }
 }
 
 @media (max-width: 768px) {
@@ -145,14 +176,17 @@ html, body {
 
   .service-header h1 {
     font-size: 1.8em;
+    margin-top: 20px;
+
   }
 
   .service-header p {
     font-size: 1.1em;
   }
 
-  .clicks p {
-    font-size: 0.9em;
+  .clicks {
+    width: 30%; 
+    font-size: 0.8em; 
   }
 
   .our-services {
@@ -174,14 +208,17 @@ html, body {
 
   .service-header h1 {
     font-size: 1.5em;
+    margin-top: -2px;
   }
 
   .service-header p {
     font-size: 0.9em;
   }
 
-  .clicks p {
-    font-size: 0.7em;
+  .clicks {
+    width: 40%; 
+    font-size: 0.7em; 
+    padding: 10px 15px; 
   }
 
   .service-item {
