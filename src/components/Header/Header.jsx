@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
-import Logoo from '../../assets/thelogo.png';
+import Logoo from '../../assets/goe.png'
 import { NavLink } from 'react-router-dom';
 import Hamburger from 'hamburger-react';
 

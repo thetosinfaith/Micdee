@@ -2,40 +2,41 @@
   {
     "id": "1",
     "type": "Mini Flats",
+    "location": "Lagos, Lekki",
+    "price": 1500000,
+    "img": "https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/b633f4bc-8e1d-49ee-58f3-f92a4bb53900/86"
+  },
+  {
+    "id": "2",
+    "type": "Office Spaces",
+    "location": "Abuja, Maitama",
+    "price": 5000000,
+    "img": "https://images.squarespace-cdn.com/content/v1/63e37c4c18b70721172c8527/65a190e5-fad8-464c-aad5-9370920897bb/Cafe+One-5.jpg"
+  },
+  {
+    "id": "3",
+    "type": "Mini Flats",
     "location": "Kano, Kano City",
     "price": 2000000,
     "img": "https://www.lekki-houses.com/wp-content/uploads/2021/02/Affordable-House-For-Sale-Lekki-Ikate-1.jpg"
   },
   {
-    "id": "2",
+    "id": "4",
     "type": "Flats and Apartments",
     "location": "Port Harcourt, GRA",
     "price": 2500000,
     "img": "https://lh3.googleusercontent.com/p/AF1QipMCc0v5EloDt7tVoKGmBf78wrsNcuQ7MejaQfC_=s680-w680-h510"
   },
   {
-    "id": "3",
+    "id": "5",
     "type": "Warehouse",
     "location": "Lagos, Apapa",
     "price": 8000000,
     "img": "https://bolutokun.com/bolu/wp-content/uploads/2023/08/APAPA.jpg"
   },
+  
   {
-    "id": "4",
-    "type": "Mini Flats",
-    "location": "Lagos, Lekki",
-    "price": 1500000,
-    "img": "https://images.nigeriapropertycentre.com/properties/images/thumbs/1862184/064d733266d481-mini-flat-lekki-phase-1-mini-flats-for-rent-lekki-phase-1-lekki-lagos.jpg"
-  },
-  {
-    "id": "5",
-    "type": "Office Spaces",
-    "location": "Abuja, Maitama",
-    "price": 5000000,
-    "img": "https://lh3.googleusercontent.com/p/AF1QipMeSlgQyZU-KAhiGU5w1hSe9dPA0dOh5SSf4xc_=s680-w680-h510"
-  },
-  {
-    "id": "",
+    "id": "6",
     "type": "Semi Detached Bungalow",
     "location": "Ogun, Abeokuta",
     "price": 3500000,
@@ -46,167 +47,147 @@
     "type": "Co-working space",
     "location": "Abuja, Wuse",
     "price": 1000000,
-    "img": "https://example.com/images/property7.jpg"
+    "img": "https://therhodesbox.com/wp-content/uploads/2022/02/luxury-coworkspaces.jpg"
   },
   {
     "id": "8",
     "type": "Semi Detached Duplex",
     "location": "Enugu, New Haven",
     "price": 6000000,
-    "img": "https://example.com/images/property8.jpg"
+    "img": "https://i1.wp.com/nigeriapropertyzone.com.ng/wp-content/uploads/2023/07/IMG-20230726-WA0084.jpg?fit=1080%2C810&ssl=1&resize=1280%2C720&crop=0%2C0%2C1280px%2C720px"
   },
   {
     "id": "9",
     "type": "Commercial Properties",
     "location": "Benin, Benin City",
     "price": 12000000,
-    "img": "https://example.com/images/property9.jpg"
+    "img": "https://www.abujaproperties.com/wp-content/uploads/2018/04/AM1.png"
   },
   {
     "id": "10",
     "type": "Houses",
     "location": "Ibadan, Bodija",
     "price": 7000000,
-    "img": "https://example.com/images/property10.jpg"
+    "img": "https://real-estate-nigeria.beforward.jp/wp-content/uploads/2021/01/Crop676x507-4-2.jpg"
   },
   {
     "id": "11",
     "type": "Terraced Bungalow",
     "location": "Kaduna, Barnawa",
     "price": 4000000,
-    "img": "https://example.com/images/property11.jpg"
+    "img": "https://mercy-homes.com/wp-content/uploads/2020/03/3-Bedroom-Luxury-Bungalow-Vantage-Court-Lekki-1.jpg"
   },
   {
     "id": "12",
     "type": "Self Contain",
     "location": "Lagos, Yaba",
     "price": 800000,
-    "img": "https://example.com/images/property12.jpg"
+    "img": "https://images.privateproperty.com.ng/large/fetched-brand-new-self-contain-with-shared-kitchen-6cICBv0LccW9qfYVnfQo.jpeg"
   },
   {
     "id": "13",
     "type": "Terraced Duplex",
     "location": "Calabar, Marian",
     "price": 5000000,
-    "img": "https://example.com/images/property13.jpg"
+    "img": "https://crimsonoaks.com.ng/wp-content/uploads/2023/02/WhatsApp-Image-2023-02-11-at-7.32.34-PM-960x570.jpeg"
   },
   {
     "id": "14",
     "type": "Shop in a Mall",
     "location": "Onitsha, Onitsha Mall",
     "price": 3000000,
-    "img": "https://example.com/images/property14.jpg"
+    "img": "https://real-estate-nigeria.beforward.jp/wp-content/uploads/2019/10/houseshopps-20191004-0249.jpg"
   },
   {
     "id": "15",
     "type": "Lands",
     "location": "Ibadan, Moniya",
     "price": 2000000,
-    "img": "https://example.com/images/property15.jpg"
+    "img": "https://images.prop24.com/337819865/Crop600x400"
   },
   {
     "id": "16",
     "type": "Detached Bungalow",
     "location": "Jos, Rayfield",
     "price": 4500000,
-    "img": "https://example.com/images/property16.jpg"
+    "img": "https://real-estate-nigeria.beforward.jp/wp-content/uploads/2020/10/yazglobalproperties-20201012-0137.jpg"
   },
   {
     "id": "17",
     "type": "Flats and Apartments",
     "location": "Ibadan, Oluyole",
     "price": 3000000,
-    "img": "https://example.com/images/property17.jpg"
+    "img": "https://media-cdn.tripadvisor.com/media/vr-splice-j/07/0c/4c/5f.jpg"
   },
   {
     "id": "18",
     "type": "Mini Flats",
     "location": "Benin, Ugbowo",
     "price": 1500000,
-    "img": "https://example.com/images/property18.jpg"
+    "img": "https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:10/e_saturation:10/f_auto,q_auto/v1647506854/Website/CMS-Uploads/cok67n3yjrd1novee2ez.jpg"
   },
   {
     "id": "19",
     "type": "Office Spaces",
     "location": "Port Harcourt, GRA",
     "price": 7000000,
-    "img": "https://example.com/images/property19.jpg"
+    "img": "https://livinspaces.net/wp-content/uploads/2023/10/Minimal-Office-Fit-Out-For-Mar-Mor-By-Micdee-Designs-17.jpg"
   },
   {
     "id": "20",
     "type": "Houses",
     "location": "Lagos, Surulere",
     "price": 6500000,
-    "img": "https://example.com/images/property20.jpg"
+    "img": "https://media-cdn.tripadvisor.com/media/vr-splice-j/04/c8/4c/ed.jpg"
   },
   {
     "id": "21",
     "type": "Flats and Apartments",
     "location": "Owerri, Aladinma",
     "price": 4000000,
-    "img": "https://example.com/images/property21.jpg"
+    "img": "https://a0.muscache.com/im/pictures/miso/Hosting-848385931955588939/original/a0e3e232-b949-47d2-a952-ca7519644f91.jpeg?im_w=720"
   },
-  {
-    "id": "22",
-    "type": "Shop",
-    "location": "Ilorin, Ilorin Market",
-    "price": 1800000,
-    "img": "https://example.com/images/property22.jpg"
-  },
-  {
-    "id": "23",
-    "type": "Semi Detached Bungalow",
-    "location": "Uyo, Shelter Afrique",
-    "price": 3500000,
-    "img": "https://example.com/images/property23.jpg"
-  },
-  {
-    "id": "24",
-    "type": "Warehouse",
-    "location": "Aba, Ariaria Market",
-    "price": 10000000,
-    "img": "https://example.com/images/property24.jpg"
-  },
+  
   {
     "id": "25",
     "type": "Co-working space",
     "location": "Ibadan, Dugbe",
     "price": 1200000,
-    "img": "https://example.com/images/property25.jpg"
+    "img": "https://images.squarespace-cdn.com/content/v1/63e37c4c18b70721172c8527/0b6f92bf-5ed8-4f59-8ca2-5c4eccfe4a44/Micdee+Designs_Mar+%26+Mor+Office+Interior_09.jpg"
   },
   {
     "id": "26",
     "type": "Semi Detached Duplex",
-    "location": "Ado-Ekiti, Government Reserved Area",
+    "location": "Ado-Ekiti, Reserved Area",
     "price": 5000000,
-    "img": "https://example.com/images/property26.jpg"
+    "img": "https://www.nairaland.com/attachments/10737213_img201911231503457_jpeg3439139bf6628f839f28f762e98bec1e"
   },
   {
     "id": "27",
     "type": "Commercial Properties",
     "location": "Kano, Sabon Gari",
     "price": 15000000,
-    "img": "https://example.com/images/property27.jpg"
+    "img": "https://images.prop24.com/337283385/Crop600x400"
   },
   {
     "id": "28",
     "type": "Houses",
-    "location": "Enugu, Independence Layout",
+    "location": "Enugu, Park Mall",
     "price": 8000000,
-    "img": "https://example.com/images/property28.jpg"
+    "img": "https://images.prop24.com/307496341/Crop600x400"
   },
   {
     "id": "29",
-    "type": "Terraced Bungalow",
+    "type": "Terraced Duplex",
     "location": "Makurdi, Wadata",
     "price": 3000000,
-    "img": "https://example.com/images/property29.jpg"
+    "img": "https://www.nairaland.com/attachments/11995692_img87062048x1536_jpeg_jpega7322c3388e3692f254b99cbebcf8aa1"
   },
   {
     "id": "30",
     "type": "Self Contain",
     "location": "Owerri, Ikenegbu",
     "price": 900000,
-    "img": "https://example.com/images/property30.jpg"
+    "img": "https://mercy-homes.com/wp-content/uploads/2020/03/3-Bedroom-Luxury-Bungalow-Vantage-Court-Lekki-4.jpg"
   }
 ]

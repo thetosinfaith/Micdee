@@ -11,7 +11,7 @@ body, html {
 
 .properties-container {
   margin-top: 10px;
-  height: 500vh; 
+  height: 400vh; 
   width: 70%; 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -23,7 +23,7 @@ body, html {
   padding: 10px;
   border-radius: 8px;
   width: 250px; 
-  height: 48vh; /* Keeping height as per your request */
+  height: 48vh; 
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   background-color: #fff;
   overflow: hidden;
@@ -37,7 +37,7 @@ body, html {
 }
 
 .property-item h4 {
-  margin: 10px 0 10px 0; /* Adjusted to avoid double margin property */
+  margin: 10px 0 10px 0; 
   color: #333;
 }
 

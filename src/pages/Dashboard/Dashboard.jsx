@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Dashboard.css';
 import { NavLink } from 'react-router-dom';
-import { MdDashboard, MdNotificationsActive, MdDarkMode } from "react-icons/md";
+import { MdDashboard, MdNotificationsActive, MdPostAdd } from "react-icons/md";
 import { TbMessage } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
 import { FaSignOutAlt } from "react-icons/fa"; 
@@ -9,8 +9,9 @@ import { CiLocationOn } from "react-icons/ci";
 import { IoIosSearch, IoIosPricetags, IoMdSettings } from "react-icons/io";
 import { RiFilter3Line } from "react-icons/ri";
 import Properties from '../Properties/Properties';
-
-
+import { BsThreeDotsVertical } from "react-icons/bs";
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
 
 
 const Dashboard = () => {
@@ -19,10 +20,6 @@ const Dashboard = () => {
   const [accountType, setAccountType] = useState('Landlord');
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
-  const toggleOpen = () => {
-    setIsOpen(!isOpen);
-  };
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
@@ -49,6 +46,21 @@ const Dashboard = () => {
       reader.readAsDataURL(file);
     }
   };
+
+  const messages = [
+    {
+        id: 3,
+        userImage: 'https://cowrywise.com/images/team/ebenezer.jpg',
+        sender: 'Ebenezer Akintomide',
+        content: 'Are there any rental properties in Calabar?',
+    },
+    {
+        id: 4,
+        userImage: 'https://cowrywise.com/images/team/tolu.jpg',
+        sender: 'Tolulope Alade', 
+        content: 'When can I view the land in Uyo?',
+    },
+  ];
 
   return (
     <div className='dashboard-container'>
@@ -77,16 +89,9 @@ const Dashboard = () => {
             <li><NavLink to='/dashboard' activeClassName="active-link"><MdDashboard /> Dashboard</NavLink></li>
             <li><NavLink to='/dashboard/profile' activeClassName="active-link"><CgProfile /> Profile</NavLink></li>
             <li><NavLink to='/dashboard/inbox' activeClassName="active-link"><TbMessage /> Messages</NavLink></li>
+            <li><NavLink to='/dashboard/settings' activeClassName="active-link"><MdPostAdd /> Post</NavLink></li>
             <li><NavLink to='/dashboard/notifications' activeClassName="active-link"><MdNotificationsActive /> Notifications</NavLink></li>
             <li><NavLink to='/dashboard/settings' activeClassName="active-link"><IoMdSettings /> Settings</NavLink></li>
-            <li>
-              <div className="dark-mode-toggle" style={{ gap: '10px', color: '#f0f0f0', marginTop: '20px'}}>
-                <MdDarkMode style={{ color: '#999' }} /> Dark Mode
-                <button onClick={toggleDarkMode} className="dark-mode-button">
-                  {isDarkMode ? 'ON' : 'OFF'}
-                </button>
-              </div>
-            </li>
           </ul>
 
           <button className="logout-button">
@@ -95,18 +100,10 @@ const Dashboard = () => {
           </button>
         </div>
       </div>
-      <div className="right-dashboard-container">
-        <div className={`features ${isOpen ? 'active' : ''}`}>
-          <NavLink to='/' exact className="feature-link" activeClassName="active-link">Buy</NavLink>
-          <NavLink to='/sell' className="feature-link" activeClassName="active-link">Sell</NavLink>
-          <NavLink to='/rent' className="feature-link" activeClassName="active-link">Rent</NavLink>
-          <NavLink to='/dashboard/post' className="feature-link" activeClassName="active-link">Post</NavLink>
-        </div>
-
+      <div className="right-dashboard-container" style={{ marginTop: '-30px' }}>
         <div className="dashboard-content">
           <div className="dashboard-inner-content">
             <div className="results-info">
-            
               <div className="select-container">
                 <div className='boxes-container'>
                   <div className="box">
@@ -135,18 +132,84 @@ const Dashboard = () => {
                   </div>
                 </div>
               </div>
-
-              <div className='category-row'>
-                <div className='children-categories'>
-                <div className={`mini-children ${isOpen ? 'active' : ''}`}>
-                <NavLink to='/' exact className="mini-feature-link" activeClassName="active-link"  style={({ isActive }) => isActive ? { color: "red" } : { color: 'red' }}>Recommended</NavLink>
-                <NavLink to='/popular' className="mini-feature-link" activeClassName="active-link" style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>Popular</NavLink>
-                <NavLink to='/latest' className="mini-feature-link" activeClassName="active-link" style={({ isActive }) => isActive ? { color: "#ED3237" } : { color: 'black' }}>Latest</NavLink>
-                </div>
-                </div>
-              </div>
+              <div className='category-row' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div className='children-categories' style={{ marginTop: '10px' }}>
+            <div className={`mini-children ${isOpen ? 'active' : ''}`}>
+              <NavLink 
+                to='/' 
+                exact 
+                className="mini-feature-link" 
+                activeClassName="active-link" 
+                style={({ isActive }) => ({ color: isActive ? 'red' : 'red' })}
+              >
+                Recommended
+              </NavLink>
+              <NavLink 
+                to='/popular' 
+                className="mini-feature-link" 
+                activeClassName="active-link" 
+                style={({ isActive }) => ({ color: isActive ? '#ED3237' : 'black' })}
+              >
+                Popular
+              </NavLink>
+              <NavLink 
+                to='/latest' 
+                className="mini-feature-link" 
+                activeClassName="active-link" 
+                style={({ isActive }) => ({ color: isActive ? '#ED3237' : 'black' })}
+              >
+                Latest
+              </NavLink>
+            </div>
+          </div>  
+      <div className="dark-mode-toggle">
+    <div 
+      className={`toggle-switch ${isDarkMode ? 'on' : 'off'}`} 
+      onClick={toggleDarkMode}
+    >
+      <div className="toggle-slider"></div>
+     </div>
+      </div>
+          </div>
               <div className='properties-container'>
                 <Properties/>
+
+                <div className='dashboard-messages'>
+                  <div className='header'>
+                    <h3>Recent Messages</h3>
+                    <BsThreeDotsVertical className='options-icon' />
+                  </div>
+                  <div className='messages'>
+                    {messages.map(message => (
+                      <div key={message.id} className='message'>
+                        <img src={message.userImage} alt={`${message.sender}'s avatar`} className='user-image' />
+                        <div className='message-content'>
+                          <span className='sender'>{message.sender}</span>
+                          <p>{message.content}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <h3 className='map-vieww'>Map View</h3>
+                  <MapContainer center={[9.082, 8.6753]} zoom={6} className='map-view'>
+                    <TileLayer
+                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    />
+                    {messages.map(message => (
+                      message.location && Array.isArray(message.location) && message.location.length === 2 ? (
+                        <Marker key={message.id} position={message.location}>
+                          <Popup>
+                            <div>
+                              <strong>{message.sender}</strong><br />
+                              {message.content}
+                            </div>
+                          </Popup>
+                        </Marker>
+                      ) : null
+                    ))}
+                  </MapContainer>
+                </div>
               </div>
             </div>
           </div>
@@ -154,6 +217,6 @@ const Dashboard = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Dashboard;
