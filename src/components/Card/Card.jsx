@@ -18,7 +18,7 @@ const propertyData = [
     id: 1,
   },
   {
-    imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSioDeCRMcMIbgV-3Ty6jSYb1kxA9j5RGSKzo6VXTECSriLpwGFai5azibktBG8xu8GIzY&usqp=CAU',
+    imgUrl: 'https://res.cloudinary.com/dffhadvza/image/upload/v1654698023/micdee/Quickcheck-8_l3djgx.jpg',
     category: 'Office Spaces',
     title: 'Spacious Office Space in Ikeja',
     sellerImage: 'assets/images/property/agent2.jpg',
@@ -97,7 +97,7 @@ const Card = () => {
 
         <div className='slider top-slider'>
           {properties.slice(0, 3).map((property) => (
-            <div key={property.id} className='property-item'>
+            <div key={property.id} className='card-property-item'>
               <div className='property-thum'>
                 <img src={property.imgUrl} alt={property.title} />
                 <div className='property-category'>
@@ -119,7 +119,7 @@ const Card = () => {
 
         <div className='slider bottom-slider'>
           {properties.slice(3, 6).map((property) => (
-            <div key={property.id} className='property-item'>
+            <div key={property.id} className='card-property-item'>
               <div className='property-thum'>
                 <img src={property.imgUrl} alt={property.title} />
                 <div className='property-category'>

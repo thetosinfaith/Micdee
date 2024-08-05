@@ -88,7 +88,7 @@
   100% { transform: translateX(100%); }
 }
 
-.property-item {
+.card-property-item {
   min-width: 33.33%;
   box-sizing: border-box;
   padding: 0 15px;
@@ -167,7 +167,7 @@
 }
 
 @media (max-width: 1280px) {
-  .property-item {
+  .card-property-item {
     min-width: 50%;
   }
 
@@ -226,7 +226,7 @@
     padding-bottom: 25px;
   }
 
-  .property-item {
+  .card-property-item {
     min-width: 100%;
   }
 

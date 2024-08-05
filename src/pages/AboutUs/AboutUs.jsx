@@ -11,7 +11,8 @@ const Services = () => {
     <div className='service-wrapper'>
       <div className='service-header'>
         <h1>At Our Core Is Trust</h1>
-        <h4 style={{ fontWeight: 'normal', marginTop: '20px', marginButton: '20px' }}>Trust us to find you your dream property, <br />at the best price, just in time.</h4>
+        <h4 style={{ fontWeight: 'normal', marginTop: '20px', marginButton: '20px' }}>We are in the business of offering you investment opportunities that can help you grow your money.
+        </h4>
       </div>
       <button className='clicks' style={{ backgroundColor: 'red', height: '5vh', border: 'none', color: 'white', cursor: 'pointer', width: '10%', borderRadius: '5px', marginBottom: '20px', marginTop: '10px'}}>
       LEARN MORE <FaAngleRight />
