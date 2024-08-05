@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './Dashboard.css';
+import './Dashboard.css'; 
 import { NavLink } from 'react-router-dom';
+import Hamburger from 'hamburger-react';
 import { MdDashboard, MdNotificationsActive, MdPostAdd } from "react-icons/md";
 import { TbMessage } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
@@ -19,6 +20,7 @@ const Dashboard = () => {
   const [name, setName] = useState('Tosin Faith');
   const [accountType, setAccountType] = useState('Landlord');
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDarkMode = () => {
@@ -49,6 +51,16 @@ const Dashboard = () => {
 
   const messages = [
     {
+      id: 1,
+      userImage: 'https://cowrywise.com/images/team/ebenezer.jpg',
+      sender: 'Ebenezer Akintomide',
+      content: 'Is the property in Ikeja still available?',
+    },
+    {
+      id: 2,
+      userImage: 'https://cowrywise.com/images/team/tolu.jpg',
+      sender: 'Tolulope Alade',
+      content: 'When can I view the land in Lagos?',
         id: 3,
         userImage: 'https://cowrywise.com/images/team/ebenezer.jpg',
         sender: 'Ebenezer Akintomide',
@@ -64,7 +76,9 @@ const Dashboard = () => {
 
   return (
     <div className='dashboard-container'>
-      <div className='left-dashboard'>
+      <div className="dashboard-hamburger-menu">
+      </div>
+      <div className={`left-dashboard ${isSidebarOpen ? <Hamburger/> : <Hamburger toggled={isSidebarOpen} toggle={setIsSidebarOpen} />}`}>
         <div className="profile-section">
           <label className="profile-pic-container">
             <input type="file" accept="image/*" onChange={handleImageUpload} />
@@ -81,10 +95,6 @@ const Dashboard = () => {
         </div>
 
         <div className="dashboard-contain">
-          <form className="dashboard-form">
-            <input type="text" placeholder="Search Property..." />
-          </form>
-
           <ul>
             <li><NavLink to='/dashboard' activeClassName="active-link"><MdDashboard /> Dashboard</NavLink></li>
             <li><NavLink to='/dashboard/profile' activeClassName="active-link"><CgProfile /> Profile</NavLink></li>
@@ -100,39 +110,82 @@ const Dashboard = () => {
           </button>
         </div>
       </div>
+      <div className="right-dashboard-container">
       <div className="right-dashboard-container" style={{ marginTop: '-30px' }}>
         <div className="dashboard-content">
           <div className="dashboard-inner-content">
             <div className="results-info">
               <div className="select-container">
-                <div className='boxes-container'>
-                  <div className="box">
-                    <input type="text" placeholder="Search" className="search-input" />
-                    <span className="price-icon"><IoIosSearch /></span>
-                  </div>
-                  <div className="box">
-                    <input type="text" placeholder="Price" className="price-input" />
-                    <span className="price-icon"><IoIosPricetags /></span>
-                  </div>
-                  <div className="box" style={{backgroundColor: '#ED3237', border: "none"}}>
-                    <select className="property-type-select" style={{color: "white"}}>
-                      <option value="" disabled selected>Properties</option>
-                      <option value="house" style={{color: "black"}}>House</option>
-                      <option value="apartment" style={{color: "black"}}>Apartment</option>
-                      <option value="condo" style={{color: "black"}}>Condo</option>
-                    </select>
-                  </div>
-                  <div className="box">
-                    <input type="text" placeholder="Location" className="location-input" />
-                    <span className="price-icon"><CiLocationOn /></span>
-                  </div>
-                  <div className="box">
-                    <input type="text" placeholder="Filter" className="filter-input" />
-                    <span className="price-icon"><RiFilter3Line /></span>
+                <div className="scrollable-container">
+                  <div className="boxes-container">
+                    <div className="box sticky-box">
+                      <input type="text" placeholder="Search" className="search-input" />
+                      <span className="price-icon"><IoIosSearch /></span>
+                    </div>
+                    <div className="box sticky-box">
+                      <input type="text" placeholder="Price" className="price-input" />
+                      <span className="price-icon"><IoIosPricetags /></span>
+                    </div>
+                    <div className="box sticky-box" style={{ backgroundColor: '#ED3237', border: "none" }}>
+                      <select className="property-type-select" style={{ color: "white" }}>
+                        <option value="" disabled selected>Properties</option>
+                        <option value="house" style={{ color: "black" }}>House</option>
+                        <option value="apartment" style={{ color: "black" }}>Apartment</option>
+                        <option value="condo" style={{ color: "black" }}>Condo</option>
+                      </select>
+                    </div>
+                    <div className="box sticky-box">
+                      <input type="text" placeholder="Location" className="location-input" />
+                      <span className="price-icon"><CiLocationOn /></span>
+                    </div>
+                    <div className="box sticky-box">
+                      <input type="text" placeholder="Filter" className="filter-input" />
+                      <span className="price-icon"><RiFilter3Line /></span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className='category-row' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div className='children-categories' style={{ marginTop: '10px' }}>
+                  <div className={`mini-children ${isSidebarOpen ? 'active' : ''}`}>
+                    <NavLink 
+                      to='/' 
+                      exact 
+                      className="mini-feature-link" 
+                      activeClassName="active-link" 
+                      style={({ isActive }) => ({ color: isActive ? 'red' : 'red' })}
+                    >
+                      Recommended
+                    </NavLink>
+                    <NavLink 
+                      to='/popular' 
+                      className="mini-feature-link" 
+                      activeClassName="active-link" 
+                      style={({ isActive }) => ({ color: isActive ? '#ED3237' : 'black' })}
+                    >
+                      Popular
+                    </NavLink>
+                    <NavLink 
+                      to='/latest' 
+                      className="mini-feature-link" 
+                      activeClassName="active-link" 
+                      style={({ isActive }) => ({ color: isActive ? '#ED3237' : 'black' })}
+                    >
+                      Latest
+                    </NavLink>
+                  </div>
+                </div>
+                <div className="dark-mode-toggle">
+                  <div 
+                    className={`toggle-switch ${isDarkMode ? 'on' : 'off'}`} 
+                    onClick={toggleDarkMode}
+                  >
+                    <div className="toggle-slider"></div>
+                  </div>
+                </div>
+              </div>
+              <div className='properties-container'>
+                <Properties />
             <div className='children-categories' style={{ marginTop: '10px' }}>
             <div className={`mini-children ${isOpen ? 'active' : ''}`}>
               <NavLink 
@@ -190,6 +243,12 @@ const Dashboard = () => {
                       </div>
                     ))}
                   </div>
+                  <div className='more-messages'>
+                    <a href='#'>See more messages</a>
+                  </div>
+                </div>
+
+                
                   <h3 className='map-vieww'>Map View</h3>
                   <MapContainer center={[9.082, 8.6753]} zoom={6} className='map-view'>
                     <TileLayer

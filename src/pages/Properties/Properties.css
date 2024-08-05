@@ -11,11 +11,14 @@ body, html {
 
 .properties-container {
   margin-top: 10px;
-  height: 400vh; 
-  width: 70%; 
+  height: 120vh; 
+  width: 150%;
   display: grid;
+  overflow-y: auto;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  scrollbar-width: none; 
+
 }
 
 .property-item {
@@ -23,10 +26,15 @@ body, html {
   padding: 10px;
   border-radius: 8px;
   width: 250px; 
-  height: 48vh; 
+  height: 47vh; 
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   background-color: #fff;
-  overflow: hidden;
+  overflow-y: auto;
+  transition: transform 1s;
+}
+
+.property-item:hover {
+  transform: scale(1.1);  
 }
 
 .property-item img {
