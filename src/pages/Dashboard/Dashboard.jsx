@@ -1,16 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Dashboard.css'; 
 import { NavLink } from 'react-router-dom';
-import { MdDashboard, MdNotificationsActive, MdPostAdd } from 'react-icons/md';
-import { TbMessage } from 'react-icons/tb';
-import { CgProfile } from 'react-icons/cg';
-import { FaSignOutAlt } from 'react-icons/fa';
-import { CiLocationOn } from 'react-icons/ci';
-import { IoIosSearch, IoIosPricetags, IoMdSettings } from 'react-icons/io';
-import { RiFilter3Line } from 'react-icons/ri';
-import Properties from '../Properties/Properties';
-import { BsThreeDotsVertical } from 'react-icons/bs';
-import 'leaflet/dist/leaflet.css';
 import Hamburger from 'hamburger-react';
 import { MdDashboard, MdNotificationsActive, MdPostAdd } from "react-icons/md";
 import { TbMessage } from "react-icons/tb";
