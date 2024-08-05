@@ -11,8 +11,13 @@ body, html {
 
 .properties-container {
   margin-top: 10px;
+<<<<<<< HEAD
   height: 120vh; 
   width: 150%;
+=======
+  height: 400vh; 
+  width: 70%; 
+>>>>>>> bbf217613c389bcd48f5d17fc14fef37c8e59c86
   display: grid;
   overflow-y: auto;
   grid-template-columns: repeat(3, 1fr);
@@ -26,7 +31,11 @@ body, html {
   padding: 10px;
   border-radius: 8px;
   width: 250px; 
+<<<<<<< HEAD
   height: 47vh; 
+=======
+  height: 48vh; 
+>>>>>>> bbf217613c389bcd48f5d17fc14fef37c8e59c86
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   background-color: #fff;
   overflow-y: auto;
