@@ -419,8 +419,6 @@ body, html {
     font-size: 1.2rem; 
 }
 
-
-
 .messages {
     flex-grow: 1;
     overflow-y: auto;
@@ -612,22 +610,19 @@ body, html {
 
 @media (max-width: 1024px) {
     .left-dashboard {
-      display: none; /* Hide on mobile and tablet by default */
+      display: none; 
     }
   
     .left-dashboard.show-sidebar {
-      display: block; /* Show when hamburger menu is clicked */
+      display: block; 
     }
   }
   
-  /* Hamburger menu styles */
   .dashboard-hamburger-menu {
-    display: none; /* Hide on larger screens */
+    display: none; 
   }
 
-  
-  /* Dark mode and light mode styles */
-  .dark-mode .right-dashboard-container {
+    .dark-mode .right-dashboard-container {
     background-color: #333;
     color: #fff;
   }
@@ -637,7 +632,6 @@ body, html {
     color: #000;
   }
 
-/* Tablet Styles */
 @media (min-width: 481px) and (max-width: 1024px) {
     .left-dashboard {
         width: 20%;
@@ -709,7 +703,6 @@ body, html {
     }
 }
 
-/* Laptop Styles */
 @media (min-width: 1025px) {
     .left-dashboard {
         width: 16%;
@@ -784,16 +777,15 @@ body, html {
 
     @media (max-width: 1024px) {
         .left-dashboard {
-          display: none; /* Hide on mobile and tablet by default */
+          display: none;
         }
 
-    /* Dashboard.css */
 
   @media (max-width: 768px) {
     .hamburger-menu {
       display: block; 
       background-color: red;
-      cursor: pointer;/* Show hamburger menu on smaller screens */
+      cursor: pointer;
     }
   
     .left-dashboard {
@@ -816,7 +808,6 @@ body, html {
     color: #fff;
   }
   
-  /* Additional styles */
   
 }
 
