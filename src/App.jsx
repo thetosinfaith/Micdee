@@ -9,6 +9,11 @@ import Booking from "./pages/Booking/Booking";
 import Post from "./pages/Post/Post";
 import Login from "./pages/Login/Login"
 import Signup from "./pages/Signup/Signup"
+import AccountTypeLayout from "./components/AccountTypeLayout/AccountTypeLayout";
+import AgentAccount from "./pages/AgentAccount/AgentAccount";
+import DeveloperAccount from "./pages/DeveloperAccount/DeveloperAccount";
+import LandlordAccount from './pages/LandlordAccount/LandlordAccount'
+import IndividualAccount from "./pages/IndividualAccount/IndividualAccount";
 
 const router = createBrowserRouter([
   {
@@ -43,12 +48,35 @@ const router = createBrowserRouter([
   },
 
   {
+    path: '/choose-account',
+    element: <AccountTypeLayout/>,
+    children:[
+      {
+        path: 'agent',
+        element: <AgentAccount/>,
+      },
+      {
+        path: 'developer',
+        element: <DeveloperAccount/>,
+      },
+      {
+        path: 'individual',
+        element: <IndividualAccount/>,
+      },
+      {
+        path: 'landlord',
+        element: <LandlordAccount/>,
+      },
+    ],
+  },
+
+  {
     path: '/auth',
     element: <AuthLayout/>,
     children: [
       {
         path: 'signup',
-        element: <Signup/>
+        element: <Signup/>,
         
       },
       {

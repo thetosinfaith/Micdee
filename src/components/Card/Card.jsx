@@ -17,11 +17,11 @@ const propertyData = [
     id: 1,
   },
   {
-    imgUrl: 'https://images.adsttc.com/media/images/5e67/9ae0/b357/658e/fb00/02bc/large_jpg/SOFTCOM_HQ_MICDEE_DESIGNS_08.jpg?1583848142',
+    imgUrl: 'https://images.squarespace-cdn.com/content/v1/63e37c4c18b70721172c8527/4eeaa6a3-ba04-4320-8582-fee4a959b885/MICDEE+DESIGN_MTN+PLAZA_4TH+FLOOR_21.jpg?format=1500w',
     category: 'Office Spaces',
     title: 'Spacious Office Space in Ikeja',
     sellerImage: 'assets/images/property/agent2.jpg',
-    sellerName: 'Rotimi Olu & Co',
+    sellerName: 'Cadwell Ltd',
     price: '₦ 3,000,000',
     id: 2,
   },
@@ -49,7 +49,7 @@ const propertyData = [
     category: 'Semi Detached Bungalow',
     title: 'Bungalow in Surulere',
     sellerImage: 'assets/images/property/agent5.jpg',
-    sellerName: 'Cadwell Ltd.',
+    sellerName: 'Rotimi Olu & Co',
     price: '₦ 1,200,000',
     id: 5,
   },
@@ -139,10 +139,11 @@ const Card = () => {
             </div>
           ))}
         </div>
-
+        <Link to='/auth/signup'>
         <div className="button-container">
           <button className="view-more-btn">{buttonText}</button>
         </div>
+        </Link>
       </div>
     </div>
   );

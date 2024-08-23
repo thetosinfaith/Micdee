@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.landlord-container {
+    height: 50vh;
+    width: 80%;
+    background-color: #007BFF; /* Background color remains unchanged */
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    color: white; /* Text color changed to black */
+    margin: 20px auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.landlord-container h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.landlord-container p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.landlord-container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.landlord-container ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.landlord-container ul li svg {
+    margin-right: 8px;
+}
+
+.direction {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: black; /* Arrow color changed to black */
+}

@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .mini-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  .mini-header .image {
+    height: 50px; 
+    width: auto; 
+  }
+  
+  .mini-header p {
+    margin: 0; 
+  }
+  
+  .mini-header p .account-span {
+    margin-left: 8px; 
+    text-decoration: none;
+  }
+
+  .mini-header p .account-span a {
+    text-decoration: none; 
+    color: #ED3237;
+  }
+  
+  .account-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 60px;
+    gap: 20px;
+    font-size: 18px;
+    font-family: Muli, ui-sans-serif, Satoshi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  }  
+  
+  .account-layout {
+    width: 100%;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px; 
+  }
+  
+  .account-layout > div {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
